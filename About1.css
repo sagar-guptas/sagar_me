@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10px;
+    /* position: fixed; */
+    
+
+  }
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+   
+  
+  }
+  .nav_links li a{
+    transition: 0px ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .nav_links li a:before{
+   position: absolute;
+   content: '';
+   left: 0;
+   bottom: 0;
+   height: 3;
+   width: 100%;
+   background: rgb(255, 0, 0);
+   transform: scaleX(0);
+   transform-origin: right;
+  }
+  .nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+.ii{
+   padding-left: 20px;
+   padding-bottom: 2s0px;
+   padding-top: 20px;
+}
+hr{
+    padding: 15px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.mm{
+    
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    width: 400px;
+}
+.skilll{
+    height:160%;
+    justify-content: center;
+}
+.skkii{
+    
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(197, 197, 197); */
+    border-radius: 15px;
+    height: 25px;
+    width: 90%;
+}
+
+.skill {
+    background-color: rgb(0, 21, 183);
+    color: white;
+    text-align: center; 
+    font-size: 12px;
+    border-radius: 15px;
+        
+}
+.container {
+   
+    width: 80%;
+    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.html {
+    width: 80%;
+    height: 20px;
+}
+.css {
+    width: 60%;
+    height: 20px;
+}
+.js {
+    width: 50%;
+    height: 20px;
+}
+.c {
+    width: 82%;
+    height: 20px;
+}
+.caa {
+    width: 85%;
+    height: 20px;
+}
+.java {
+    width: 40%;
+    height: 20px;
+}
+.python {
+    width: 50%;
+    height: 20px;
+}
+.project{
+    padding: 0 3% 3% 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pppp{
+    margin: 5.8% 20%;
+    font-size: larger;
+
+}
+.proo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.rj{
+    width: 45%;
+    padding: 0px 15px 20px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#a123{
+    padding: 5px;
+    color: rgb(55, 55, 55);
+}
+video{
+        width: 65%;
+        justify-items: center;
+}
+.text{
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+}
+
+
+@media only screen and (max-width:811px) {
+    .skills{
+        display: flex;
+        flex-wrap: nowrap;
+        /* flex-direction: column; */
+}
+.one{
+    width: 42%;
+}
+.two{
+    width: 42%;
+}
+
+.pppp {
+    padding: 20px 10px 20px 10px;
+    margin:1px;
+    font-size: larger;
+}
+}
+
+@media only screen and (max-width:629px) {
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+    .mm{
+        width: 40%;
+    }
+    .container {
+        width: 65%;
+    /* }
+    .skills{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row; */
+    }
+    .rj{
+        
+            width: 85%;
+            padding: 0px 0px 20px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+    
+    .html {
+        width: 80%;
+        height: 15px;
+    }
+    .css {
+        width: 70%;
+        height: 15px;
+    }
+    .js {
+        width: 50%;
+        height: 15px;
+    }
+    .c {
+        width: 82%;
+        height: 15px;
+    }
+    .caa {
+        width: 85%;
+        height: 15px;
+    }
+    .java {
+        width: 40%;
+        height: 15px;
+    }
+    .python {
+        width: 50%;
+        height: 15px;
+    }
+   
+
+@media only screen and (max-width:628px) {
+    .mm{
+        width: 200%;
+    }
+    .pppp {
+        padding: 20px 0 20px 0;
+        margin:1px;
+        font-size: larger;
+    }
+}

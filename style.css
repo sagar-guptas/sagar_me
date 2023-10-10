@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+  font-size: 50px;
+}
+body{
+  background-color: rgb(255, 255, 255);
+  
+}
+.name{
+  color: black;
+  padding-left: 40px;
+}
+.pp{
+  padding-bottom: 15px;
+  color: black;
+  width: 90%;
+  padding: 0px 10px 15px 50px;
+}
+button{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 80px;
+  height: 28px;
+  border-radius: 6px;
+}
+a{
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10px;
+  /* position: fixed; */
+  
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+ 
+
+}
+.nav_links li a{
+  transition: 0px ;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.nav_links li a:before{
+ position: absolute;
+ content: '';
+ left: 0;
+ bottom: 0;
+ height: 3;
+ width: 100%;
+ background: rgb(255, 0, 0);
+ transform: scaleX(0);
+ transform-origin: right;
+}
+.nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+img{
+ width: 350px; 
+ height: 90%;
+ padding: 30px;
+ justify-content: space-around;
+ overflow: hidden;
+}
+.imc{
+  padding: 0px 5px;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 90px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
+  width: 202%;
+}
+td{
+  padding: 10px;
+  
+}
+
+
+/* here i put the code for footer images */
+.foot-icon{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ll{
+  display: flex;
+  
+  width: 30px;
+  height: 30px;
+}
+
+
+/* this is a preloade it is use when the page is loaded */
+
+#preloder{
+  background: rgb(255, 255, 255) url(items/loder.gif) no-repeat center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+.content{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+
+}
+table{
+  align-items: center;
+}
+
+@media only screen and (min-width:100px) and (max-width:400px){
+  .container{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  img{
+    width: 200px;
+    padding-top: 80px;
+  }
+  .logo{
+    font-size: medium;
+  }
+  .nav_links li a {
+    font-size: small;
+  }
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .name{
+    color: black;
+    padding-left: 0px;
+  }
+
+}.pp{
+  padding-bottom: 15px;
+  color: black;
+  width: 90%;
+  padding: 0px 15px 15px 21px;
+}
+  
+
+footer{
+  text-align: center;
+}
+
+
+@media only screen and (min-width:400px) and (max-width:587px){
+  .container{
+    flex-direction:column-reverse ;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo{
+    font-size: medium;
+  }
+  .nav_links li a {
+    font-size: small;
+  }
+  img{
+    width: 300px;
+    padding-top: 60px;
+  }
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .name{
+    color: black;
+    padding-left: 0px;
+  }
+  .pp{
+    padding-bottom: 15px;
+    color: black;
+    width: 70%;
+    padding: 0px 10px 15px 50px;
+  }
+  
+}
+
+@media only screen and (min-width:579px) and (max-width:800px){
+  img {
+    width: 300px;
+  }
+  .container{
+    padding-right: 40px;
+ }
+ p{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+ 
+}
+@media only screen and (min-width:179px) and (max-width:744){
+    nav .nav_links{
+    height: 230px;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(47, 21, 77);
+  }
+  p{
+    text-align: center;
+  }
+  
+}
